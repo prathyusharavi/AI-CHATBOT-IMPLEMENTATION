@@ -92,6 +92,7 @@ if __name__ == "__main__":
 </html>
 ```
 ## style.css
+```
 body {
   background: #f2f2f2;
   text-align: center;
