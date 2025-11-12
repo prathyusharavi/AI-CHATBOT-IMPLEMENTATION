@@ -2,24 +2,24 @@
 Intelligent Enterprise Assistant
 An AI-powered virtual assistant designed to help the public sector work smarter. It automates tasks like document search, policy answering, leave requests, and helpdesk support — all through natural conversation.
 
-Overview
+## Overview
 The Intelligent Enterprise Assistant acts as a smart FAQ chatbot for organizational use.
 It uses predefined knowledge to respond to queries and can be easily extended to support more workflows.
 
 This prototype demonstrates how AI-powered chat support can:
 
-Answer repeated employee/citizen queries instantly
-Reduce helpdesk workload
-Improve access to organizational knowledge
-Serve as a foundation for integrating automation and data lookup
-Problem Statement
+1.Answer repeated employee/citizen queries instantly
+2.Reduce helpdesk workload
+3.Improve access to organizational knowledge
+4.Serve as a foundation for integrating automation and data lookup
+## Problem Statement
 Public sector organizations handle large volumes of repetitive queries related to rules, HR policies, procedures, and internal services.
 Traditional systems require manual lookup, causing delays and inefficiency.
 
-Features
+## Features
 • Conversational Chat Interface • Predefined knowledge responses • Web-based UI • Accessible using any browser • Easy to Customize • Responds to common policy and helpdesk queries • Users can ask questions naturally
 
-Project Structure
+## Project Structure
 intelligent-enterprise-assistant/
 │
 ├── app.py
@@ -30,8 +30,9 @@ intelligent-enterprise-assistant/
 └── static/
 └── (CSS / JS files)
 
-Implementation Code:
-app.py
+## Implementation Code:
+## app.py
+```
 from flask import Flask, render_template, request, jsonify
 
 app = Flask(__name__)
@@ -66,8 +67,9 @@ def chatbot_response():
 
 if __name__ == "__main__":
     app.run(debug=True)
-
-index.html
+```
+## index.html
+```
 <!DOCTYPE html>
 <html>
 <head>
@@ -88,8 +90,8 @@ index.html
 <script src="/static/script.js"></script>
 </body>
 </html>
-
-style.css
+```
+## style.css
 body {
   background: #f2f2f2;
   text-align: center;
@@ -137,7 +139,9 @@ button {
 button:hover {
   background: #0056b3;
 }
-script.js
+```
+## script.js
+```
 function sendMessage() {
   let msg = document.getElementById("userInput").value;
   if (msg.trim() === "") return;
@@ -156,7 +160,9 @@ function sendMessage() {
 
   document.getElementById("userInput").value = "";
 }
-How to Run Everything
+```
+## How to Run Everything
+```
  Step 1: Open Terminal in your project folder
  Step 2: Install Dependencies
  pip install flask
@@ -174,12 +180,13 @@ How to Run Everything
   what is an intelligent enterprise?
 
 ✅ It’ll reply using your sample policy data!
-Future Enhancements
+```
+## Future Enhancements
 • Add AI-based contextual search using embeddings • Voice-based interaction (speech-to-text) • Hindi / Telugu / Tamil language support • Integration with actual HRMS system • Admin dashboard for analytics
 
-OUTPUT:
+## OUTPUT:
 <img width="1620" height="862" alt="image" src="https://github.com/user-attachments/assets/0c935f04-3874-4cd0-a81d-72147f32f26d" />
 
-RESULT:
+## RESULT:
 Thus the Chatbot is executed Successfully.
 
